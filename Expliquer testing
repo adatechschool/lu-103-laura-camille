@@ -10,7 +10,7 @@
 		Testent la communication entre le code et une base de données, un système de fichiers ou autre tiers
 	- Les tests FONCTIONNELS :
 		Vont tester l'interface graphique, les fonctionnalités globales de l'application
-		Examinent l'application du point de vue de l'utilisateur et vérifient que le système fonctionne comme prévu
+		Examinent l'application du point de vue de l'utilisateur
 	- Les tests de PERFORMANCE :
 		Permettent de tester la résistance de l'application
 
