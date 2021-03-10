@@ -1,12 +1,31 @@
-Qu'est-ce qu'un test unitaire? Quels sont ses avantages? 
+-- Qu'est-ce qu'un test unitaire? Quels sont ses avantages? 
 
--le test unitaire révèle si la logique derrière le code est appropriée et fonctionnera dans tous les cas.
--il améliore la lisibilité du code et aide les développeurs à comprendre le code de base, ce qui facilite la mise en œuvre des modifications plus rapidement.
--des tests unitaires bien conduits sont également de bons outils pour la documentation du projet.
--les tests sont effectués en un peu plus de quelques millisecondes, ce qui vous permet d’en réaliser des centaines en très peu de temps.
+	-le test unitaire révèle si la logique derrière le code est appropriée et fonctionnera dans tous 
+	les cas.
+	-il améliore la lisibilité du code et aide les développeurs à comprendre le code de base, ce qui 
+	facilite la mise en œuvre des modifications plus rapidement.
+	-des tests unitaires bien conduits sont également de bons outils pour la documentation du projet.
+	-les tests sont effectués en un peu plus de quelques millisecondes, ce qui vous permet d’en réaliser 
+	des centaines en très peu de temps.
 
-La qualité finale du code s’améliorera parce qu’il s’agira en fin de compte d’un code propre et de haute qualité grâce à ces essais continus.
-Puisque le test unitaire divise le code en petits fragments, il est possible de tester différentes parties du projet sans avoir à attendre que d’autres parties soient terminées.
+	La qualité finale du code s’améliorera parce qu’il s’agira en fin de compte d’un code propre et de 
+	haute qualité grâce à ces essais continus.
+	Puisque le test unitaire divise le code en petits fragments, il est possible de tester différentes 
+	parties du projet sans avoir à attendre que d’autres parties soient terminées.
+
+	3 étapes du test unitaire: 
+
+		> Organiser. C’est la première étape des tests unitaires. Cette étape définit les exigences 
+		auxquelles le code doit satisfaire.
+		> Agir. C’est l’étape intermédiaire des tests : le moment où le test est effectué, donnant les 
+		résultats que vous aurez à analyser par la suite.
+		> Affirmer. Dans cette dernière étape, les résultats devront être vérifiés pour voir s’ils sont 
+		conformes aux attentes. Si c’est le cas, il est validé et vous pouvez continuer. Dans le cas 
+		contraire, les erreurs éventuelles devront être corrigées jusqu’à ce qu’elles cessent d’apparaître.
+
+		Les tests unitaires peuvent se faire manuellement mais c'est plus facile et courant d'automatiser 
+		la procédure à l'aide d'outils. 
+		exemples d'outils: xUnit (framework .NET), JUnit (appli Java), PHPUnit 
 
 -- Les différents types de tests (unitaires, d’intégration, de parcours/validation) :
 
@@ -17,24 +36,18 @@ Puisque le test unitaire divise le code en petits fragments, il est possible de 
 		Sont petits, nombreux et exécutés automatiquement
 	- Les tests d'INTÉGRATION :
 		Vont tester plusieurs blocs logiciels de l'application et plusieurs composants applicatifs
-		Testent la communication entre le code et une base de données, un système de fichiers ou autre tiers
+		Testent la communication entre le code et une base de données, un système de fichiers ou autre 
+		tiers
 	- Les tests FONCTIONNELS :
 		Vont tester l'interface graphique, les fonctionnalités globales de l'application
 		Examinent l'application du point de vue de l'utilisateur
 	- Les tests de PERFORMANCE :
 		Permettent de tester la résistance de l'application
 
-3 étapes du test unitaire: 
-
-> Organiser. C’est la première étape des tests unitaires. Cette étape définit les exigences auxquelles le code doit satisfaire.
-> Agir. C’est l’étape intermédiaire des tests : le moment où le test est effectué, donnant les résultats que vous aurez à analyser par la suite.
-> Affirmer. Dans cette dernière étape, les résultats devront être vérifiés pour voir s’ils sont conformes aux attentes. Si c’est le cas, il est validé et vous pouvez continuer. Dans le cas contraire, les erreurs éventuelles devront être corrigées jusqu’à ce qu’elles cessent d’apparaître.
-
-Les tests unitaires peuvent se faire manuellement mais c'est plus facile et courant d'automatiser la procédure à l'aide d'outils. 
-exemples d'outils: xUnit (framework .NET), JUnit (appli Java), PHPUnit 
 
 -- Qu’est ce que le code coverage :
-	(couverture de code) : indique dans quelle mesure une partie du code est couverte par les tests unitaires
+	(couverture de code) : indique dans quelle mesure une partie du code est couverte par les tests 
+	unitaires
 
 
 -- Qu’est ce que le TDD :
@@ -43,9 +56,10 @@ exemples d'outils: xUnit (framework .NET), JUnit (appli Java), PHPUnit
 
 -- A quoi doit répondre un test unitaire (F.I.R.S.T.) ?
 
-Principe pour écrire de bons tests
-F pour Fast (centaines voire milliers de tests par secondes)
-I pour Isolé et Indépendant (1 problème = 1 cause = 1 solution)
-R pour Répétable (reproductible quel que soit l'environnement d'exécution )
-S pour Self validating (aucun doute sur le succès ou l'échec du test)
-T pour Thorough (lié au TDD /approfondi, test écrit au plus près possible du moment où on écrit le code)
+	Principe pour écrire de bons tests :
+		F pour Fast (centaines voire milliers de tests par secondes)
+		I pour Isolé et Indépendant (1 problème = 1 cause = 1 solution)
+		R pour Répétable (reproductible quel que soit l'environnement d'exécution )
+		S pour Self validating (aucun doute sur le succès ou l'échec du test)
+		T pour Thorough (lié au TDD /approfondi, test écrit au plus près possible du moment où 
+		on écrit le code)
