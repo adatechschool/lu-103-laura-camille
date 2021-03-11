@@ -19,5 +19,16 @@ function fizzbuzz(number){
          }
     
  }
-      
+ 
+ let number=0;
+
+ function showFizzbuzz(){
+     while (number>=0 && number<101){
+         console.log(fizzbuzz(number));
+         number++;
+     }
+ }
+     
+ showFizzbuzz();
+
  module.exports = fizzbuzz;
