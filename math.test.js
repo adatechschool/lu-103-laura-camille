@@ -1,5 +1,5 @@
 const sum = require("./math.js");
-const math = require("./math.js")
+const math = require("./math.js");
 
 it("adds 1 + 2 equals 3", ()=> {
     expect(math.sum(1,2)).toBe(3);
